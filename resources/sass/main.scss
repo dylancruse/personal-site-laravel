@@ -1,26 +1,57 @@
 @import "variables";
 
+// Fonts
+.video-game-font {
+  font-family: $video-game-font, Arial, Helvetica, sans-serif;
+}
+
 // Colors
 .white {
     color: $color-white;
+}
+.sky-blue {
+    color: $color-sky-blue;
+}
+.light-cyan {
+    color: $color-light-cyan;
+}
+.yellow {
+    color: $color-yellow;
+}
+.red {
+    color: $color-red;
+}
+.blue {
+    color: $color-blue;
+}
+.purple {
+    color: $color-purple;
+}
+.black {
+    color: $color-black;
 }
 
 .white-background {
     background-color: $color-white;
 }
-
-.purple {
-    color: $color-purple;
+.sky-blue-background {
+    background-color: $color-sky-blue;
 }
-
+.light-cyan-background {
+    background-color: $color-light-cyan;
+}
+.yellow-background {
+    background-color: $color-yellow;
+}
+.red-background {
+    background-color: $color-red;
+}
+.blue-background {
+    background-color: $color-blue;
+}
 .purple-background {
     background-color: $color-purple;
 }
-
-.black {
-    color: $color-black;
-}
-
 .black-background {
     background-color: $color-black;
 }
@@ -46,6 +77,10 @@
     width: 100%;
 }
 
+.half-width {
+    width: 50%;
+}
+
 .full-height {
-    height: 95vh;
+    height: 100vh;
 }
