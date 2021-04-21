@@ -1,0 +1,21 @@
+@import "variables";
+@import "main";
+
+body {
+    font-family: "Nunito", sans-serif;
+    background-color: $color-black;
+}
+
+.content {
+    padding: 2rem;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
