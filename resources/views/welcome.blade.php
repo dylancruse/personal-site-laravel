@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="flex align-items-center justify-content-center full-height">
-    <h1 class="white">Welcome</h1>
+    <h1 class="white video-game-font">Welcome</h1>
 </div>
 
 {{-- <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">

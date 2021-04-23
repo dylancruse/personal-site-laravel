@@ -1,9 +1,20 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// Variables
 @import "variables";
 @import "main";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
 
 body {
     font-family: "Nunito", sans-serif;
     background-color: $color-black;
+}
+
+h1 {
+    font-size: $h1-font-size-big;
 }
 
 .content {
@@ -18,4 +29,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: $color-white;
+}
+
+// Cards
+.card {
+    // background-color: $color-sky-blue !important;
+    color: $color-black !important;
+}
+
+.card-header {
+    background-color: $color-sky-blue !important;
+    color: $color-white !important;
+    text-decoration: underline;
+}
+
+// Buttons
+.btn-primary {
+    background-color: $color-blue !important;
 }
