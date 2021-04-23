@@ -22,7 +22,10 @@ Route::get('/clear', function () {
     Artisan::call('route:clear');
     Artisan::call('config:clear');
     Artisan::call('cache:clear');
+    Artisan::call('config:cache');
     return 'Nice';
 });
 
 Auth::Routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

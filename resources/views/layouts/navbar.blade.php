@@ -1,7 +1,9 @@
 
 <div id="navbar" class="navbar full-width white sky-blue-background">
     <div class="flex half-width px-6">
-        <i class="fas fa-cat fa-2x"></i>
+        <a href="{{ url('/home') }}">
+            <i class="fas fa-cat fa-2x"></i>
+        </a>
         {{-- <i class="fab fa-angellist fa-2x"></i> --}}
         
     </div>
