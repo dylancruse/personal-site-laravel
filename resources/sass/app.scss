@@ -3,13 +3,18 @@
 
 // Variables
 @import "variables";
-@import "main";
+
+// Mixins
+@import "mixins";
 
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
 
+@import "main";
+
 body {
-    font-family: "Nunito", sans-serif;
+    font-family: $body-font;
+    font-size: $base-font-size;
     background-color: $color-black;
 }
 
@@ -22,26 +27,41 @@ h1 {
 }
 
 .navbar {
+    @include bg-grad-blue-purple;
     width: 100%;
     position: fixed;
     top: 0;
-    height: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
     color: $color-white;
+
+    .nav-button {
+        background: none;
+        color: $color-white;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-link {
+        padding: 0 !important;
+        &:hover {
+            color: $color-white;
+            text-decoration: none;
+        }
+    }
 }
 
 // Cards
 .card {
     // background-color: $color-sky-blue !important;
     color: $color-black !important;
+    border: none;
 }
 
 .card-header {
-    background-color: $color-sky-blue !important;
+    @include bg-grad-blue-purple;
     color: $color-white !important;
-    text-decoration: underline;
 }
 
 // Buttons
