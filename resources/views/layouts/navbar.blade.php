@@ -9,13 +9,14 @@
     </div>
     <div class="flex justify-content-end half-width px-6">
         @auth
-            <a href="{{ url('/home') }}" class="text-md white">Home</a>
+            <a href="{{ url('/home') }}" class="text-md white nav-link">Home</a>
+            <form action="{{ route('logout') }}" method="post">
+                @csrf
+                <button type="submit" class="nav-button text-md ml-4">Logout</button>
+            </form>
         @else
-            <a href="{{ route('login') }}" class="text-md white">Log in</a>
-    
-            @if (Route::has('register'))
-                <a href="{{ route('register') }}" class="ml-4 text-md white">Register</a>
-            @endif
+            <a href="{{ route('login') }}" class="nav-link text-md white">Log in</a>
+            <a href="{{ route('register') }}" class="nav-link text-md white ml-4">Register</a>
         @endauth
     </div>
 </div>

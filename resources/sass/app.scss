@@ -35,6 +35,21 @@ h1 {
     align-items: center;
     justify-content: center;
     color: $color-white;
+
+    .nav-button {
+        background: none;
+        color: $color-white;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-link {
+        padding: 0 !important;
+        &:hover {
+            color: $color-white;
+            text-decoration: none;
+        }
+    }
 }
 
 // Cards
