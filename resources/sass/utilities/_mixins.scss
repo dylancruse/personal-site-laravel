@@ -1,0 +1,15 @@
+@mixin bg-grad-blue-purple {
+    background: linear-gradient(
+        to top right,
+        $color-blue,
+        $color-purple-3
+    ) !important;
+}
+
+@mixin bg-grad-red-orange {
+    background: linear-gradient(
+        to top right,
+        $color-red,
+        $color-orange
+    ) !important;
+}

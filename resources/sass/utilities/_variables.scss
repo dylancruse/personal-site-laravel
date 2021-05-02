@@ -1,18 +1,21 @@
+// Breakpoints
+$breakpoint-md: 768px;
+
 // Colors
 $color-purple: #9b51e0;
 $color-white: rgb(250, 250, 250);
 $color-black: #191308;
+$color-light-gray: #c4c4c4;
+$color-gray: #4f4f4f;
 $color-sky-blue: #7fb7be;
 $color-light-cyan: #d3f3ee;
 $color-yellow: #ffe818;
 $color-red: #eb5757;
-$color-blue: #2f80ed;
+$color-blue: #2273e0;
 $color-orange: #f2994a;
 $color-green: #27ae60;
 $color-green-2: #6fcf97;
-
-$color-red: #bc2c1a;
-
+$color-red-2: #bc2c1a;
 $color-flickr-pink: #f72585ff;
 $color-byzantine: #b5179eff;
 $color-purple-2: #7209b7ff;
@@ -24,6 +27,8 @@ $color-ultramarine-blue: #4361eeff;
 $color-dodger-blue: #4895efff;
 $color-vivid-sky-blue: #4cc9f0ff;
 
+$card-box-shadow: 2px 7px 20px 4px #333;
+
 // Body
 $body-bg: #f8fafc;
 
@@ -31,10 +36,10 @@ $body-bg: #f8fafc;
 $video-game-font: "VT323";
 $body-font: "Ramabhadra";
 
-$base-font-size: 16px;
-
-$font-size-base: 0.9rem;
 $line-height-base: 1.6;
+
+$font-size-base: 16px;
+$font-size-small: 14px;
 
 $h1-font-size-big: 48px;
 $h1-font-size-small: 32px;

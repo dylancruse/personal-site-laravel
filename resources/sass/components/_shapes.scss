@@ -1,0 +1,31 @@
+@import "../utilities/variables";
+
+.big-green-circle {
+    width: 159px;
+    height: 157px;
+    border-radius: 50%;
+    background-color: $color-green;
+    position: relative;
+    top: 35px;
+    // left: 15px;
+}
+
+.yellow-rectangle {
+    width: 19.03px;
+    height: 199.97px;
+    background-color: $color-yellow;
+    transform: rotate(-47.45deg);
+    position: relative;
+    top: -49px;
+    left: -26px;
+}
+
+.small-light-green-circle {
+    width: 83px;
+    height: 81px;
+    border-radius: 50%;
+    background-color: $color-green-2;
+    position: relative;
+    top: -25px;
+    left: -41px;
+}

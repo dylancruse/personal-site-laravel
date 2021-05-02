@@ -1,86 +1,109 @@
-@import "variables";
+@import "./utilities/variables";
+@import "./utilities/mixins";
 
 // Typography
 .video-game-font {
     font-family: $video-game-font, Arial, Helvetica, sans-serif;
 }
 
+.text-small {
+    font-size: $font-size-small !important;
+}
+
 // Colors
 .white {
-    color: $color-white;
+    color: $color-white !important;
 }
 .sky-blue {
-    color: $color-sky-blue;
+    color: $color-sky-blue !important;
 }
 .light-cyan {
-    color: $color-light-cyan;
+    color: $color-light-cyan !important;
 }
 .yellow {
-    color: $color-yellow;
+    color: $color-yellow !important;
 }
 .red {
-    color: $color-red;
+    color: $color-red !important;
 }
 .blue {
-    color: $color-blue;
+    color: $color-blue !important;
 }
 .purple {
-    color: $color-purple;
+    color: $color-purple !important;
 }
 .black {
-    color: $color-black;
+    color: $color-black !important;
+}
+.orange {
+    color: $color-orange !important;
 }
 
 .white-background {
-    background-color: $color-white;
+    background-color: $color-white !important;
 }
 .sky-blue-background {
-    background-color: $color-sky-blue;
+    background-color: $color-sky-blue !important;
 }
 .light-cyan-background {
-    background-color: $color-light-cyan;
+    background-color: $color-light-cyan !important;
 }
 .yellow-background {
-    background-color: $color-yellow;
+    background-color: $color-yellow !important;
 }
 .red-background {
-    background-color: $color-red;
+    background-color: $color-red !important;
 }
 .blue-background {
-    background-color: $color-blue;
+    background-color: $color-blue !important;
 }
 .purple-background {
-    background-color: $color-purple;
+    background-color: $color-purple !important;
 }
 .black-background {
-    background-color: $color-black;
+    background-color: $color-black !important;
+}
+.orange-background {
+    background-color: $color-orange !important;
+}
+
+.bg-grad-red-orange {
+    @include bg-grad-red-orange;
 }
 
 // Positioning
 .flex {
-    display: flex;
+    display: flex !important;
 }
 
 .align-items-center {
-    align-items: center;
+    align-items: center !important;
 }
 
 .justify-content-center {
-    justify-content: center;
+    justify-content: center !important;
 }
 
 .justify-content-end {
-    justify-content: end;
+    justify-content: end !important;
 }
 
 .full-width {
-    width: 100%;
+    width: 100% !important;
 }
 
 .half-width {
-    width: 50%;
+    width: 50% !important;
 }
 
 .full-height {
-    height: 90vh;
+    height: 100% !important;
+}
+
+.full-page-height {
+    height: 100vh !important;
+}
+
+.mb-6 {
+    margin-bottom: 4rem !important;
 }

@@ -1,0 +1,9 @@
+@import "../utilities/variables";
+
+.text-input {
+    border: none;
+    border-radius: 1px;
+    background-color: $color-light-gray;
+    width: 100%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
