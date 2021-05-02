@@ -23,7 +23,11 @@ h1 {
 }
 
 .content {
-    padding: 2rem;
+    padding: 0;
+
+    @media (min-width: $breakpoint-md) {
+        padding: 2rem;
+    }
 }
 
 .navbar {
