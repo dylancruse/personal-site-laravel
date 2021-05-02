@@ -11173,6 +11173,7 @@ h1 {
   align-items: center;
   justify-content: center;
   color: #fafafa;
+  z-index: 9999;
 }
 
 .navbar .nav-button {
