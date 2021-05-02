@@ -101,7 +101,11 @@
 }
 
 .full-page-height {
-    height: 100vh !important;
+    height: 150vh !important;
+
+    @media (min-width: $breakpoint-md) {
+        height: 100vh !important;
+    }
 }
 
 .mb-6 {
