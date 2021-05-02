@@ -11094,7 +11094,7 @@ a.text-dark:focus {
 
 .login-form .shapes-container {
   justify-content: center;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 
 @media (min-width: 768px) {
