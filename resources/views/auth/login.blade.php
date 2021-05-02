@@ -14,7 +14,7 @@
                 </div>
                 <div class="col-lg-6 justify-content-center p-4">
                     <div class="flex flex-column justify-content-center">
-                        <div class="shapes-container row flex-nowrap mb-6 mr-0">
+                        <div class="shapes-container row flex-nowrap mr-0">
                             <div class="big-green-circle"></div>
                             <div class="yellow-rectangle"></div>
                             <div class="small-light-green-circle"></div>

@@ -23,10 +23,12 @@
     .shapes-container {
         justify-content: center;
         margin-left: 1.5rem;
+        margin-bottom: 2rem;
 
         @media (min-width: $breakpoint-md) {
             justify-content: end;
             margin-left: 0;
+            margin-bottom: 4rem;
         }
     }
 }
