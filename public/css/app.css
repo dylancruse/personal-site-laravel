@@ -11054,7 +11054,13 @@ a.text-dark:focus {
 }
 
 .full-page-height {
-  height: 100vh !important;
+  height: 150vh !important;
+}
+
+@media (min-width: 768px) {
+  .full-page-height {
+    height: 100vh !important;
+  }
 }
 
 .mb-6 {
