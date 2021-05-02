@@ -11176,6 +11176,7 @@ h1 {
   justify-content: center;
   color: #fafafa;
   z-index: 9999;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .nav-button {
