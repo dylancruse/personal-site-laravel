@@ -11095,12 +11095,14 @@ a.text-dark:focus {
 .login-form .shapes-container {
   justify-content: center;
   margin-left: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 768px) {
   .login-form .shapes-container {
     justify-content: end;
     margin-left: 0;
+    margin-bottom: 4rem;
   }
 }
 
