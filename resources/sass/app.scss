@@ -1,21 +1,21 @@
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Nunito");
-
-// Variables
-@import "variables";
-
-// Mixins
-@import "mixins";
-
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
 
 @import "main";
+@import "layouts";
+@import "components";
+
+// Variables, Mixins
+@import "utilities";
+@import "utilities/mixins";
 
 body {
     font-family: $body-font;
-    font-size: $base-font-size;
-    background-color: $color-black;
+    font-size: $font-size-base;
+    background-color: $color-gray;
+    color: $color-white;
+    box-shadow: inset 0px 4px 100px 100px rgba(0, 0, 0, 0.2);
+    line-height: $line-height-base;
 }
 
 h1 {
@@ -57,6 +57,7 @@ h1 {
     // background-color: $color-sky-blue !important;
     color: $color-black !important;
     border: none;
+    box-shadow: $card-box-shadow;
 }
 
 .card-header {
@@ -67,4 +68,15 @@ h1 {
 // Buttons
 .btn-primary {
     background-color: $color-blue !important;
+}
+
+.btn {
+    border: none;
+    color: $color-white;
+    padding: 0.25rem 3rem;
+
+    &:hover {
+        text-decoration: none;
+        color: $color-white;
+    }
 }

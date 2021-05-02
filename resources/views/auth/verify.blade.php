@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container flex align-items-center justify-content-center full-height">
+<div class="container flex align-items-center justify-content-center full-page-height">
     <div class="row full-width justify-content-center">
         <div class="col-md-8">
             <div class="card">

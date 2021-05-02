@@ -1,0 +1,30 @@
+@import "../utilities/variables";
+
+.login-form {
+    box-shadow: $card-box-shadow;
+    border-radius: 5px;
+    flex-direction: column;
+
+    @media (min-width: $breakpoint-md) {
+        flex-direction: row;
+    }
+
+    .login-form-card {
+        border-radius: 5px;
+        margin-bottom: 2rem;
+
+        @media (min-width: $breakpoint-md) {
+            margin-bottom: 0;
+        }
+    }
+
+    .shapes-container {
+        justify-content: center;
+        margin-left: 3.5rem;
+
+        @media (min-width: $breakpoint-md) {
+            justify-content: end;
+            margin-left: 0;
+        }
+    }
+}
