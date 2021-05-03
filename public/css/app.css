@@ -11137,7 +11137,7 @@ a.text-dark:focus {
 
 @media (min-width: 768px) {
   .login-form .shapes-container {
-    justify-content: end;
+    justify-content: flex-end;
     margin-left: 0;
     margin-bottom: 4rem;
   }
