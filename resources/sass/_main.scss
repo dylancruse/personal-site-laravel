@@ -73,6 +73,7 @@
 
 .code-background {
     background-image: url("/img/code-background.png");
+    background-size: cover;
 }
 
 // Positioning
@@ -89,7 +90,7 @@
 }
 
 .justify-content-end {
-    justify-content: end !important;
+    justify-content: flex-end !important;
 }
 
 .full-width {

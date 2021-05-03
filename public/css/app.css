@@ -11027,6 +11027,7 @@ a.text-dark:focus {
 
 .code-background {
   background-image: url("/img/code-background.png");
+  background-size: cover;
 }
 
 .flex {
@@ -11042,7 +11043,7 @@ a.text-dark:focus {
 }
 
 .justify-content-end {
-  justify-content: end !important;
+  justify-content: flex-end !important;
 }
 
 .full-width {
