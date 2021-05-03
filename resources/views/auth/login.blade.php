@@ -29,7 +29,7 @@
                                             <label for="user_name" class="col-form-label text-md-right">{{ __('Username') }}</label>
                                         </div>
                                         
-                                        <div class="col-md-8">
+                                        <div class="col-md-8 flex align-items-center">
                                             <input id="user_name" type="text" maxlength="20" class="text-input @error('user_name') is-invalid @enderror" name="user_name" value="{{ old('user_name') }}" required autocomplete="user_name" autofocus>
                                         </div>
 
@@ -45,7 +45,7 @@
                                             <label for="password" class="col-form-label text-md-right">{{ __('Password') }}</label>
                                         </div>
 
-                                        <div class="col-md-8">
+                                        <div class="col-md-8 flex align-items-center">
                                             <input id="password" type="password" class="text-input @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
                                         </div>
 
