@@ -19,7 +19,20 @@ body {
 }
 
 h1 {
-    font-size: $h1-font-size-big;
+    font-size: $h1-font-size-small;
+
+    @media (min-width: $breakpoint-md) {
+        font-size: $h1-font-size-big;
+    }
+}
+
+h2 {
+    margin: 0;
+    font-size: $h2-font-size-small;
+
+    @media (min-width: $breakpoint-md) {
+        font-size: $h2-font-size-big;
+    }
 }
 
 .content {

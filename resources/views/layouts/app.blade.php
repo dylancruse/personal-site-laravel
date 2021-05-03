@@ -24,7 +24,7 @@
     <body class="antialiased">
         @include('layouts.navbar')
 
-        <main class="content">
+        <main class="content overflow-hidden">
             @yield('content')
         </main>
     </body>

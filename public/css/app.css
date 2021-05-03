@@ -11025,6 +11025,10 @@ a.text-dark:focus {
   background: linear-gradient(to top right, #eb5757, #f2994a) !important;
 }
 
+.code-background {
+  background-image: url("/img/code-background.png");
+}
+
 .flex {
   display: flex !important;
 }
@@ -11063,7 +11067,41 @@ a.text-dark:focus {
   }
 }
 
+.half-page-height {
+  height: 62.5vh !important;
+}
+
+@media (min-width: 768px) {
+  .half-page-height {
+    height: 50vh !important;
+  }
+}
+
+.breakout {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.mt-6 {
+  margin-top: 4rem !important;
+}
+
 .mb-6 {
+  margin-bottom: 4rem !important;
+}
+
+.mx-6 {
+  margin-left: 4rem !important;
+  margin-right: 4rem !important;
+}
+
+.my-6 {
+  margin-top: 4rem !important;
   margin-bottom: 4rem !important;
 }
 
@@ -11071,13 +11109,11 @@ a.text-dark:focus {
   box-shadow: 2px 7px 20px 4px #333;
   border-radius: 5px;
   flex-direction: column;
-  margin-top: 2rem;
 }
 
 @media (min-width: 768px) {
   .login-form {
     flex-direction: row;
-    margin-top: 0;
   }
 }
 
@@ -11153,7 +11189,24 @@ body {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 32px;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+
+h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 40px;
+  }
 }
 
 .content {
