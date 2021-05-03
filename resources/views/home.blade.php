@@ -27,7 +27,7 @@
         </div>
         <div class="row justify-content-center full-width my-4 p-4">
             <div class="col-lg-10">
-                @include('kyoob')
+                @include('components.codepen.kyoob')
             </div>
         </div>
     </div>
