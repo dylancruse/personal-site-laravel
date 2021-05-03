@@ -57,7 +57,7 @@
                                     </div>
 
                                     <div class="row mb-4">
-                                        <div class="col-md-12 flex justify-content-center">
+                                        <div class="col-md-12 flex justify-content-center align-items-center">
                                             <input class="mr-2" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
                                             <label class="col-form-label text-md-left text-small" for="remember"> {{ __('Remember Me') }} </label>
                                         </div>
