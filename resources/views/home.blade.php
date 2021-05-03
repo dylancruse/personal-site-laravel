@@ -19,15 +19,15 @@
             </div>
         </div>
     </div>
-    <div class="breakout code-background">
-        <div class="flex flex-column justify-content-center align-items-center">
-            <div class="row justify-content-center full-width mt-6">
-                <h2 class="white video-game-font">Codepen</h2>
-            </div>
-            <div class="row justify-content-center full-width my-4 p-4">
-                <div class="col-lg-10">
-                    @include('kyoob')
-                </div>
+</div>
+<div class="breakout code-background">
+    <div class="flex flex-column justify-content-center align-items-center">
+        <div class="row justify-content-center full-width mt-6">
+            <h2 class="white video-game-font">Codepen</h2>
+        </div>
+        <div class="row justify-content-center full-width my-4 p-4">
+            <div class="col-lg-10">
+                @include('kyoob')
             </div>
         </div>
     </div>
