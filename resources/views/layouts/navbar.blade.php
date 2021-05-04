@@ -1,13 +1,13 @@
 
 <div id="navbar" class="navbar">
-    <div class="flex half-width px-6">
+    <div class="flex half-width">
         <a href="{{ url('/home') }}" class="nav-link">
             <i class="fas fa-cat fa-2x"></i>
         </a>
         {{-- <i class="fab fa-angellist fa-2x"></i> --}}
         
     </div>
-    <div class="flex justify-content-end half-width px-6">
+    <div class="flex justify-content-end half-width">
         @auth
             <form action="{{ route('logout') }}" method="post">
                 @csrf
