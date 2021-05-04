@@ -11107,6 +11107,11 @@ a.text-dark:focus {
   margin-bottom: 4rem !important;
 }
 
+.px-6 {
+  padding-left: 4rem !important;
+  padding-right: 4rem !important;
+}
+
 .login-form {
   box-shadow: 2px 7px 20px 4px #333;
   border-radius: 5px;

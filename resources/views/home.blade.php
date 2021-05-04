@@ -23,9 +23,13 @@
 <div class="breakout code-background">
     <div class="flex flex-column justify-content-center align-items-center">
         <div class="row justify-content-center full-width mt-6">
-            <h2 class="white video-game-font">Codepen</h2>
+            <div class="flex flex-column align-items-center text-center px-6">
+                <h2 class="white video-game-font">Codepen</h2>
+                <p class="mt-4 px-lg-4">Codepen is a site that allows you to create and host smaller software projects.</p>
+                <p class="px-lg-4">It's basically the programmer version of doodling!</p>
+            </div>
         </div>
-        <div class="row justify-content-center full-width my-4 p-4">
+        <div class="row justify-content-center full-width my-4 px-4">
             <div class="col-lg-10">
                 @include('components.codepen.kyoob')
             </div>
