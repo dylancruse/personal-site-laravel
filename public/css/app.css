@@ -11081,7 +11081,6 @@ a.text-dark:focus {
 
 .breakout {
   width: 110vw;
-  height: 100vh;
   position: relative;
   left: 50%;
   right: 50%;
@@ -11196,7 +11195,7 @@ body {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 40px;
 }
 
 @media (min-width: 768px) {
@@ -11212,7 +11211,7 @@ h2 {
 
 @media (min-width: 768px) {
   h2 {
-    font-size: 40px;
+    font-size: 32px;
   }
 }
 
