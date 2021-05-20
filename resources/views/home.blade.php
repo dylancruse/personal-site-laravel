@@ -14,7 +14,7 @@
                         @endif
         
                         <h1 class="white">{{ __('Home') }}</h1>
-                        <p class="white">Thanks for stopping by!</p>
+                        <h5 class="white">Thanks for stopping by!</h5>
                     </div>
                 </div>
             </div>
@@ -25,9 +25,9 @@
     <div class="flex flex-column justify-content-center align-items-center">
         <div class="row justify-content-center full-width mt-6">
             <div class="flex flex-column align-items-center text-center px-6">
-                <h2 class="white video-game-font">Codepen</h2>
-                <p class="mt-4 px-lg-4">Codepen is a site that allows you to create and host smaller software projects. It's basically the programmer version of doodling!</p>
-                <p class="px-lg-4">Here are a couple of my favorite doodles:</p>
+                <h2 class="white">Codepen.io</h2>
+                {{-- <p class="mt-4 px-lg-4">Codepen is a site that allows you to create and host smaller software projects. It's basically the programmer version of doodling!</p> --}}
+                {{-- <p class="px-lg-4">Here are a couple of my favorite doodles:</p> --}}
             </div>
         </div>
         <div class="row justify-content-center full-width my-4 px-4">
