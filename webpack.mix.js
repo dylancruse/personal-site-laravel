@@ -13,4 +13,20 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
-    .vue();
+    .vue()
+    .webpackConfig({
+        stats: {
+            // hash: true,
+            // version: true,
+            // timings: true,
+            children: true,
+            errors: true,
+            errorDetails: true,
+            warnings: true,
+            // chunks: true,
+            // modules: false,
+            reasons: true,
+            // source: true,
+            // publicPath: true,
+        },
+    });

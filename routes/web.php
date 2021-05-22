@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Auth;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
 Route::get('/clear', function () {
     Artisan::call('route:clear');
@@ -27,5 +27,3 @@ Route::get('/clear', function () {
 });
 
 Auth::Routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
