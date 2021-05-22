@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf_token" content={{ csrf_token() }}>
+        <meta name="base_url" content="{{ url('/') }}">
 
         <title>{{ ucfirst($title ?? 'Site') }} - Dylan Cruse</title>
 
@@ -14,7 +16,7 @@
             crossorigin="anonymous"
         />
         
-        <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/app.js') }}" defer></script>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
         <link 
@@ -28,10 +30,12 @@
         </style>
     </head>
     <body class="antialiased">
-        @include('layouts.navbar')
-
-        <main class="content overflow-hidden">
-            @yield('content')
-        </main>
+        <div id="app">
+            @include('layouts.navbar')
+            
+            <main class="content overflow-hidden">
+                @yield('content')
+            </main>
+        </div>
     </body>
 </html>

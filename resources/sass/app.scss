@@ -43,47 +43,85 @@ h2 {
     }
 }
 
-.navbar {
-    @include bg-grad-blue-purple;
-    width: 100%;
-    position: fixed;
-    top: 0;
+.navbar__wrapper {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $color-white;
-    z-index: 9999;
-    box-shadow: 0 5px 5px rgb(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: flex-end;
+    max-height: 6.5vh;
 
-    .nav-link {
-        padding: 0 !important;
+    .navbar {
+        @include bg-grad-blue-purple;
+        width: 100%;
+        position: relative;
+        height: 6.5vh;
+        // top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color-white;
+        z-index: 9999;
+        box-shadow: 0 5px 5px rgb(0, 0, 0, 0.1);
 
-        &:hover {
-            color: $color-white;
-            text-decoration: none;
+        .navbar__inner {
+            width: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .home-link {
+                &:hover {
+                    color: $color-white;
+                    text-decoration: none;
+                }
+            }
+
+            .nav-menu-button {
+                margin-top: 0.1rem;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .nav-menu-slide-down {
+        transform: translateY(0) !important;
+    }
+
+    .nav-menu {
+        position: relative;
+        right: 0;
+        border: 2px solid $color-white;
+        // box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
+        width: 100%;
+        max-width: none;
+        z-index: 999;
+        transition: 0.2s;
+        transform: translateY(-7rem);
+
+        @media (min-width: $breakpoint-md) {
+            max-width: 250px;
         }
 
-        .nav-link__button {
-            border: none;
-            padding: 0.3rem 1rem;
-            transition: 0.1s linear;
-            background: rgb(0, 0, 0, 0);
-            color: $color-white;
-            border-radius: 5%;
-            box-shadow: none;
-            background: linear-gradient(
-                to top right,
-                lighten($color-blue, 10%),
-                lighten($color-purple-3, 10%)
-            );
+        .nav-menu__inner {
+            .nav-link__wrapper {
+                .nav-link {
+                    @include bg-grad-blue-purple;
+                    padding: 0.5rem;
+                    border: 1px solid $color-white;
+                    text-align: center;
 
-            &:hover {
-                box-shadow: 0px 2px 0px rgba(255, 255, 255, 1);
-                background: linear-gradient(
-                    to top right,
-                    $color-blue,
-                    $color-purple-3
-                );
+                    &:hover {
+                        color: $color-white;
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+
+                    span {
+                        font-size: $nav-menu-font-size;
+                    }
+                }
             }
         }
     }

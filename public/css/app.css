@@ -11226,11 +11226,18 @@ h2 {
   }
 }
 
-.navbar {
+.navbar__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-height: 6.5vh;
+}
+
+.navbar__wrapper .navbar {
   background: linear-gradient(to top right, #2273e0, #560badff) !important;
   width: 100%;
-  position: fixed;
-  top: 0;
+  position: relative;
+  height: 6.5vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11239,29 +11246,63 @@ h2 {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-.navbar .nav-link {
-  padding: 0 !important;
+.navbar__wrapper .navbar .navbar__inner {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.navbar .nav-link:hover {
+.navbar__wrapper .navbar .navbar__inner .home-link:hover {
   color: #fafafa;
   text-decoration: none;
 }
 
-.navbar .nav-link .nav-link__button {
-  border: none;
-  padding: 0.3rem 1rem;
-  transition: 0.1s linear;
-  background: rgba(0, 0, 0, 0);
-  color: #fafafa;
-  border-radius: 5%;
-  box-shadow: none;
-  background: linear-gradient(to top right, #4f8fe6, #6e0edd);
+.navbar__wrapper .navbar .navbar__inner .nav-menu-button {
+  margin-top: 0.1rem;
 }
 
-.navbar .nav-link .nav-link__button:hover {
-  box-shadow: 0px 2px 0px white;
-  background: linear-gradient(to top right, #2273e0, #560badff);
+.navbar__wrapper .navbar .navbar__inner .nav-menu-button:hover {
+  cursor: pointer;
+}
+
+.navbar__wrapper .nav-menu-slide-down {
+  transform: translateY(0) !important;
+}
+
+.navbar__wrapper .nav-menu {
+  position: relative;
+  right: 0;
+  border: 2px solid #fafafa;
+  width: 100%;
+  max-width: none;
+  z-index: 999;
+  transition: 0.2s;
+  transform: translateY(-7rem);
+}
+
+@media (min-width: 768px) {
+  .navbar__wrapper .nav-menu {
+    max-width: 250px;
+  }
+}
+
+.navbar__wrapper .nav-menu .nav-menu__inner .nav-link__wrapper .nav-link {
+  background: linear-gradient(to top right, #2273e0, #560badff) !important;
+  padding: 0.5rem;
+  border: 1px solid #fafafa;
+  text-align: center;
+}
+
+.navbar__wrapper .nav-menu .nav-menu__inner .nav-link__wrapper .nav-link:hover {
+  color: #fafafa;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar__wrapper .nav-menu .nav-menu__inner .nav-link__wrapper .nav-link span {
+  font-size: 18px;
 }
 
 .card {

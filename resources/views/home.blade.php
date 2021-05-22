@@ -2,11 +2,11 @@
 
 @section('content')
 <div class="container flex flex-column justify-content-center">
-    <div class="flex justify-content-center full-width mt-4">
+    <div class="flex justify-content-center full-width mb-5">
         <div class="row justify-content-center align-items-center full-width my-6">
             <div class="col-md-8">
                 <div class="card half-page-height bg-grad-red-orange mt-2">
-                    <div class="flex flex-column justify-content-center align-items-center full-height p-4">
+                    <div class="flex flex-column justify-content-center align-items-center full-height text-center p-4">
                         @if (session('status'))
                             <div class="alert alert-success" role="alert">
                                 {{ session('status') }}
