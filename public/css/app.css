@@ -11237,13 +11237,19 @@ h2 {
   background: linear-gradient(to top right, #2273e0, #560badff) !important;
   width: 100%;
   position: relative;
-  height: 6.5vh;
+  height: 8.5vh;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fafafa;
   z-index: 9999;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .navbar__wrapper .navbar {
+    height: 6.5vh;
+  }
 }
 
 .navbar__wrapper .navbar .navbar__inner {
@@ -11275,6 +11281,7 @@ h2 {
   position: relative;
   right: 0;
   border: 2px solid #fafafa;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
   width: 100%;
   max-width: none;
   z-index: 999;

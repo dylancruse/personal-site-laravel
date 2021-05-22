@@ -21,7 +21,6 @@
                     <input type="hidden" name="_token" :value="csrf">
                     <div v-on:click="logout()" class="nav-link text-md white">
                         <span>Logout 💥</span>
-                        <!-- <button type="submit" class="nav-link__button ml-4">Logout</button> -->
                     </div>
                 </form>
             </div>
@@ -30,11 +29,9 @@
             <div class="nav-link__wrapper">
                 <a :href="loginRoute" class="nav-link text-md white">
                     <span>Login 💻</span>
-                    <!-- <button class="nav-link__button">Login</button> -->
                 </a>
                 <a :href="registerRoute" class="nav-link text-md white">
                     <span>Register 📝</span>
-                    <!-- <button class="nav-link__button">Register</button> -->
                 </a>
             </div>
         </div>
