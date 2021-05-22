@@ -1919,7 +1919,9 @@ __webpack_require__.r(__webpack_exports__);
       axios__WEBPACK_IMPORTED_MODULE_0___default().post(url + '/logout', {
         '_token': this.csrf
       }).then(function (response) {
-        console.log(response);
+        if (response.status === 204) {
+          window.location = url;
+        }
       })["catch"](function (error) {
         console.log(error);
       });

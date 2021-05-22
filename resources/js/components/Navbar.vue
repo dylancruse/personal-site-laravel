@@ -69,7 +69,9 @@
             logout() {
                 const url = document.querySelector('meta[name="base_url"]').getAttribute('content');
                 axios.post(url + '/logout', { '_token': this.csrf }).then(response => {
-                    console.log(response)
+                    if (response.status === 204) {
+                        window.location = url;
+                    }
                 }).catch(error => {
                     console.log(error)
                 })
