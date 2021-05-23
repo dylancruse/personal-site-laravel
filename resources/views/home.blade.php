@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container flex flex-column justify-content-center">
-    <div class="flex justify-content-center full-width mb-5">
+    <div class="flex justify-content-center full-width my-5">
         <div class="row justify-content-center align-items-center full-width my-6">
             <div class="col-md-8">
                 <div class="card half-page-height bg-grad-red-orange mt-2 z-index-neg-1">
