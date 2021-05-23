@@ -11079,10 +11079,6 @@ a.text-dark:focus {
   }
 }
 
-.z-index-neg-1 {
-  z-index: -1;
-}
-
 .breakout {
   width: 110vw;
   position: relative;
@@ -11244,6 +11240,7 @@ h2 {
   flex-direction: column;
   align-items: flex-end;
   max-height: 6.5vh;
+  z-index: 2;
 }
 
 .navbar__wrapper .navbar {
