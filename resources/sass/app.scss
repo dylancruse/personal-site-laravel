@@ -54,7 +54,7 @@ h2 {
     flex-direction: column;
     align-items: flex-end;
     max-height: 6.5vh;
-    z-index: 2;
+    z-index: 3;
 
     .navbar {
         @include bg-grad-blue-purple;
@@ -65,7 +65,7 @@ h2 {
         align-items: center;
         justify-content: center;
         color: $color-white;
-        z-index: 1;
+        z-index: 2;
         box-shadow: 0 5px 5px rgb(0, 0, 0, 0.1);
 
         @media (min-width: $breakpoint-md) {
