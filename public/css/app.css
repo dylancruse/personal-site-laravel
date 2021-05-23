@@ -11191,14 +11191,8 @@ body {
   font-size: 16px;
   background-color: #4f4f4f;
   color: #fafafa;
-  box-shadow: inset 0px 4px 25px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 4px 100px 100px rgba(0, 0, 0, 0.2);
   line-height: 1.6;
-}
-
-@media (min-width: 768px) {
-  body {
-    box-shadow: inset 0px 4px 100px 100px rgba(0, 0, 0, 0.2);
-  }
 }
 
 h1 {
