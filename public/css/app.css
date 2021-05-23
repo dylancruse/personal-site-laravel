@@ -11240,7 +11240,7 @@ h2 {
   flex-direction: column;
   align-items: flex-end;
   max-height: 6.5vh;
-  z-index: 2;
+  z-index: 3;
 }
 
 .navbar__wrapper .navbar {
@@ -11252,7 +11252,7 @@ h2 {
   align-items: center;
   justify-content: center;
   color: #fafafa;
-  z-index: 1;
+  z-index: 2;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
