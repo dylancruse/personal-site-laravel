@@ -14,8 +14,11 @@ body {
     font-size: $font-size-base;
     background-color: $color-gray;
     color: $color-white;
-    box-shadow: inset 0px 4px 100px 100px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 4px 25px 25px rgba(0, 0, 0, 0.2);
     line-height: $line-height-base;
+    @media (min-width: $breakpoint-md) {
+        box-shadow: inset 0px 4px 100px 100px rgba(0, 0, 0, 0.2);
+    }
 }
 
 h1 {

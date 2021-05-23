@@ -3,8 +3,8 @@
 @section('content')
 <div class="container flex align-items-center justify-content-center full-page-height">
     <div class="row full-width justify-content-center">
-        <div class="col-lg-10">
-            <div class="login-form flex black white-background py-4 z-index-neg-1">
+        <div class="col-lg-10 z-index-neg-1">
+            <div class="login-form flex black white-background py-4">
                 <div class="col-lg-6 justify-content-center px-4">
                     <div class="login-form-card flex justify-content-center align-items-center full-height bg-grad-red-orange">
                         <div class="text-nowrap white p-4">
